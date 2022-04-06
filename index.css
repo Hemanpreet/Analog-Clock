@@ -1,0 +1,45 @@
+
+#clockContainer{ 
+    /* by margin:auto our clockContainer will get centered */ 
+    position: relative;
+    margin: auto;
+     /* 40vw means whatever is the width if viewing device so we want 40% of that viewport width */
+    height: 40vw;
+    width: 40vw; 
+    /* as height and width are 40vw so we get a square container */
+    background: url(clock.png) no-repeat;
+    /* to bring clock in center we use background-size property*/
+    background-size: 100%;
+}
+
+#hour, #minute, #second{
+    /* An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+   However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.  */
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+}
+#hour{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;  
+}
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;  
+}
+#second{
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8; 
+    
+}
